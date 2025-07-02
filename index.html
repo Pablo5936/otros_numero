@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Número Personal</title>
+</head>
+
+<body>
+  <section>
+    <h2>Calcula tu Número de Destino</h2>
+    <div class="formulario">
+      <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+      <input type="date" id="fecha-nacimiento">
+    </div>
+    <div class="botones">
+      <button id="calcular" onclick="calcularNumeroDestino()">Calcular</button>
+      <button id="mostrar-significado" onclick="mostrarSignificadoNumero()">Mostrar Significado</button>
+    </div>
+    <div class="resultado">
+      <span id="resultado1"></span>
+      <span id="explicacion1"></span>
+    </div>
+  </section>
+  <section>
+    <h2>Calcular Número del Nombre</h2>
+    <div class="formulario">
+      <label for="nombre">Escribe tu nombre completo:</label>
+      <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+    </div>
+    <div class="botones">
+      <button id="calcular" onclick="calcularNumeroNombre()">Calcular</button>
+      <button id="mostrar-significado" onclick="mostrarSignificadoNombre()">Mostrar Significado</button>
+    </div>
+    <div class="resultado">
+      <span id="resultado2"></span>
+      <span id="explicacion2"></span>
+    </div>
+  </section>
+  <script src="./js/numeros_destino.js"></script>
+  <script src="./js/numeros_nombre.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
